@@ -8,10 +8,24 @@
   margin-top: 50px;
 }
 
+.top{
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,62,240,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.card{
+  background-color: transparent;
+}
+
 .card1 {
   margin-left: 100px;
   height: 100%;
 }
+
+.card1>h6{
+  color:#fff;
+}
+
 
 .card2 {
   display: none;
@@ -27,16 +41,19 @@
 
 .next-button {
   width: 100%;
-  height: 30px;
-  background-color: #252e37;
+  height: 32px;
+  background-color:transparent;
   color: #fff;
-  border-radius: 3px;
+  border-radius: 20px;
   cursor: pointer;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
 }
 
 .next-button:hover {
-  background-color: #ff8100;
-  color: #fff;
+  box-shadow: 2px 2px 2px #fff;
+  
 }
 
 #progressbar {
@@ -116,17 +133,18 @@
   height: 400px;
   margin-bottom: 20px;
   border: none !important;
+  background-color: transparent!important;
 }
 
 .licensing_cards > span {
-  border: 1px solid #a8a59c;
+  border: 1px solid #fff;
   margin: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px #a8a59c;
+  color:#fff;
 }
 
 .licensing_cards > span:hover {
@@ -136,12 +154,13 @@
   transform: scale(1.1);
   transition: all 0.5s;
   cursor: pointer;
-  color: #ff8100;
-  border: 1px solid #ff8100;
+  box-shadow: 2px 2px 2px #fff;
+ 
 }
 
 .type_of_req_cards {
   overflow: scroll;
+  
 }
 .type_of_req_cards > .card {
   display: flex;
@@ -150,16 +169,17 @@
   flex-wrap: wrap;
   height: 350px;
   border: none;
+  background-color: transparent;
 }
 
 .type_of_req_cards > .card > span {
-  border: 1px solid #a8a59c;
+  border: 1px solid #fff;
   margin: 10px;
   border-radius: 5px;
-  box-shadow: 10px 10px 5px #a8a59c;
   width: 85%;
   height: 50px;
   font-size: smaller;
+  color: #fff;
 }
 
 .type_of_req_cards > .card > span:nth-child(8) {
@@ -174,6 +194,7 @@
   transition: all 1s !important;
   filter: grayscale(100%);
   cursor: pointer;
+  box-shadow: 2px 2px 2px #fff;
 }
 
 .type_of_req_cards > .card > span > p {
@@ -187,6 +208,68 @@
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
 }
+
+.personal_det_body>h3{
+  color: #fff;
+  text-align: center!important;
+}
+
+.personal_det_body>input{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #fff;
+  margin: 6px 0;
+  height: 32px;
+  border-radius: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  outline: none;
+  text-align: center;
+  color: #fff;
+}
+.personal_det_body>input::placeholder{
+  color: #fff;
+}
+
+.sub_and_desc{
+  background: rgba(0, 0, 0, 0.1);
+  width: 413px;
+  padding: 30px 20px 50px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.sub_and_desc_body>input{
+width: 100%;
+background: transparent;
+border: 1px solid #fff;
+/* margin: 6px 0; */
+height: 32px;
+border-radius: 20px;
+padding: 0 10px;
+box-sizing: border-box;
+outline: none;
+text-align: center;
+color: #fff;
+}
+
+.sub_and_desc_body>textarea{
+width: 100%;
+background: transparent;
+border: 1px solid #fff;
+margin-bottom:30px;
+border-radius: 20px;
+padding: 10px 10px;
+box-sizing: border-box;
+outline: none;
+text-align: center;
+color: #fff;
+}
+
+.sub_and_desc_body>input::placeholder,.sub_and_desc_body>textarea::placeholder{
+  color: #fff;
+}
+
 
 @media only screen and (min-width: 250px) and (max-width: 767px) {
   .card1_main {
