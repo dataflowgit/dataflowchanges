@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit ticket</title>
+</head>
+
+<body>
+  <div class="container main_container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-12 col-md-11 col-lg-10 col-xl-9">
+        <div class="row top justify-content-center align-items-center px-3 pt-2"
+          style="background-color: #ff8100; border-radius: 5px;">
+          <p class="prev fa fa-long-arrow-left" id="back" style="color: #fff;">Back</p>
+          <h3 style="color: #fff;">Submit a ticket</h3>
+        </div>
+
+
+        <!------------ card body start here ------------>
+        <div class="card_body d-flex flex-md-row px-2 mt-4 flex-column-reverse">
+
+          <!--------- card1 start here -------------->
+          <div class="col-md-6 col-sm-6 card1_main  px-2">
+            <div class="card1">
+              <ul id="progressbar" class="text-center">
+                <li class="active step0"></li>
+                <li class="step0"></li>
+                <li class="step0"></li>
+                <li class="step0"></li>
+                <li class="step0"></li>
+              </ul>
+              <h6 class="mb-5">Licensing Authority</h6>
+              <h6 class="mb-5">Type of request</h6>
+              <h6 class="mb-5">Personal details of applicant</details></h6>
+              <h6 class="mb-5">Subject & Description</h6>
+            </div>
+          </div>
+          <!---------- card1 end here -------------->
+
+
+
+          <!---------- card2 start here -------------->
+          <div class="col-md-6 card2_main">
+            <!-----------licensing authority or institution section-------------->
+            <div class="card2 first-screen show ml-2">
+              <div class="row">
+                <!-----------licensing authority or institution cards body start here-------------->
+                <div id="collapseLicensingBody" style="transition: 0.8s">
+                  <div class="card  licensing_cards d-flex flex-row flex-wrap justify-content-center">
+                    <span><img src="./images/schs.png" alt="img" width="120px" height="70px" /><br />(SCHS)</span>
+                    <span><img src="./images/dha.png" alt="img" width="120px" height="70px" /><br />(DHA)</span>
+
+                    <span><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />(DOHAD)</span>
+                    <span><img src="./images/dohpq.png" alt="img" width="120px" height="70px" /><br />(DOHPQ)</span>
+                    <span><img src="./images/mohuae.png" alt="img" width="120px" height="70px" /><br />(MOHUAE)</span>
+
+                    <span><img src="./images/nhra.jpg" alt="img" width="120px" height="70px" /><br />(NHRA)</span>
+                    <span><img src="./images/omsb.png" alt="img" width="120px" height="70px" /><br />(OMSB)</span>
+                    <span><img src="./images/tpio.png" alt="img" width="120px" /><br />(TPIO)</span>
+
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(CCAD)</span>
+                    <span><img src="./images/cdad.jpg" alt="img" width="120px" height="70px" /><br />(CDAD)</span>
+                    <span><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />DOHAD (MEAD)</span>
+
+                    <span><img src="./images/dcas.png" alt="img" width="120px" height="70px" /><br />(DCAS)</span>
+                    <span><img src="./images/dhca.png" alt="img" width="120px" height="70px" /><br />(DHCA)</span>
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />EuroSynapses</span>
+
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(GDCUK)</span>
+                    <span><img src="./images/gmcuk.png" alt="img" width="120px" height="70px" /><br />(GMCUK)</span>
+                    <span><img src="./images/dhaman.png" alt="img" width="120px" height="70px" /><br />(DHAMAN)</span>
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(INZ)</span>
+
+                    <span><img src="./images/kse.png" alt="img" width="120px" height="70px" /><br />(KSE)</span>
+                    <span><img src="./images/mohuae.png" alt="img" width="120px" height="70px" /><br />(MOHUAEN)</span>
+                    <span><img src="./images/moms.png" alt="img" width="120px" height="70px" /><br />(MOMS)</span>
+
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEK)</span>
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEO)</span>
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />NCNZ</span>
+
+                    <span><img src="./images/ose.png" alt="img" width="120px" height="70px" /><br />(OSE)</span>
+                    <span><img src="./images/crpep.png" alt="img" width="120px" height="70px" /><br />(CRPEP)</span>
+                    <span><img src="./images/docdad.jpg" alt="img" width="120px" height="70px" /><br />(DOCDAD)</span>
+                    <span><img src="./images/ssd.jpg" alt="img" width="120px" height="70px" /><br />(SSD)</span>
+                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MSBN)</span>
+                    <span><img src="./images/aequo.png" alt="img" width="120px" height="70px" /><br />(AEQUO)</span>
+                  </div>
+                </div>
+                <!-----------licensing authority or institution cards body ends here-------------->
+
+
+
+                <div class="next-button d-flex justify-content-center align-items-center p-0">
+                  <span class="fa fa-arrow-right"></span>
+                </div>
+              </div>
+            </div>
+            <!-----------licensing authority or institution section ends here-------------->
+
+
+            <!------------ type of request start here ------------------->
+            <div class="card2">
+              <div class="row">
+                <div class="col-md-12">
+                <div class="form-group mb-3 type_of_req_cards">
+                    <div class="card">
+                      <span><p class="texttab1" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
+                      <span><p class="texttab2" onclick="showText(this)">Unable to find my report on dataflow portal</p></span>
+                      <span><p class="texttab3" onclick="showText(this)">I want to get an additional document verified</p></span>
+                      <span><p class="texttab4" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
+                      <span><p class="texttab5" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
+                      <span><p class="texttab6" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
+                      <span><p class="texttab7" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
+                      <span class="mb-2"><p>Avail Paid Service Centre Support</p></span>
+                    </div>
+                </div>
+              </div>
+                <div class="next-button d-flex justify-content-center align-items-center p-0">
+                  <span class="fa fa-arrow-right"></span>
+                </div>
+              </div>
+            </div>
+            <!------------ type of request ends here ------------------->
+
+
+            <!--------- personal details of applicant  start here--------->
+            <div class="card2 personal_det">
+              <div class="row px-3 mt-2 mb-4 text-center">
+                <center><h3>Applicant details</h3></center>
+                <input type="email" class="btn btn-primary mb-2 w-100 mt-0" style="
+                            /* background-color: #ff8100; */
+                            border: none;
+                          " placeholder="Enter email">
+                          <input type="number" class="btn btn-primary mb-2 w-100 mt-0" style="
+                          /* background-color: #ff8100; */
+                          border: none;
+                        " placeholder="Enter mobile number">
+
+                <input type="date" class="btn btn-primary mb-2 w-100 mt-0" style="
+                            /* background-color: #ff8100; */
+                            border: none;
+                        " placeholder="Enter mobile number">
+                <div class="next-button d-flex justify-content-center align-items-center p-0">
+                  <span class="fa fa-arrow-right"></span>
+                </div>
+              </div>
+            </div>
+            <!--------- personal details of applicant end here--------->
+
+
+            <!--------- subject & description start here --------->
+            <div class="card2">
+              <div class="row">
+                <div class="form-group mb-3 w-100">
+                  <div id="type_of_req">
+                    <div class="card  p-0" style="border: none">
+                      <input type="text" placeholder="enter subject here" class="btn btn-primary mb-2 w-100 mt-0" style="
+                      border: none">
+                      <textarea name="description" id="description" cols="30" rows="10" placeholder="enter description here"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="next-button d-flex justify-content-center align-items-center p-0">
+                  <span class="fa fa-arrow-right"></span>
+                </div>
+              </div>
+            </div>
+            <!--------- subject & description end here --------->
+
+
+
+            
+<!----------- success messege start here ---------------->
+            <div class="card2">
+              <div class="row">
+                <div class="form-group mb-3 w-100">
+                  <div  id="type_of_req">
+                    <div class="card  p-0" style="border: none">
+                     <img src="https://uploads-ssl.webflow.com/5ef0df6b9272f7410180a013/60c0e28575cd7c21701806fd_q1cunpuhbdreMPFRSFLyfUXNzpqv_I5fz_plwv6gV3sMNXwUSPrq88pC2iJijEV7wERnKXtdTA0eE4HvdnntGo9AHAWn-IcMPKV-rZw1v75vlTEoLF4OdNqsRb7C6r7Mvzrm7fe4.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--------- success messege end here --------->
+          </div>
+          <!---------------- card2 end here -------------------->
+        </div>
+        <!---------------- card body end here ---------------->
+
+      </div>
+    </div>
+  </div>
+
+  <div id="viewTextModal">
+
+  </div>
+</body>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+
+
+
+
+<!----------- jquery start here ----------->
+<script>
+  $(document).ready(function () {
+    var current_fs, next_fs, previous_fs;
+
+    // No BACK button on first screen
+    if ($(".show").hasClass("first-screen")) {
+      $(".prev").css({ display: "none" });
+    }
+
+
+
+    // Next button
+    $(".next-button").click(function () {
+      current_fs = $(this).parent().parent();
+      next_fs = $(this).parent().parent().next();
+      $(".prev").css({ display: "block" });
+      $(current_fs).removeClass("show");
+      $(next_fs).addClass("show");
+
+      $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+
+      current_fs.animate(
+        {},
+        {
+          step: function () {
+            current_fs.css({
+              display: "none",
+              position: "relative",
+            });
+
+            next_fs.css({
+              display: "block",
+            });
+          },
+        }
+      );
+    });
+
+    // Previous button
+    $(".prev").click(function () {
+      current_fs = $(".show");
+      previous_fs = $(".show").prev();
+
+      $(current_fs).removeClass("show");
+      $(previous_fs).addClass("show");
+
+      $(".prev").css({ display: "block" });
+
+      if ($(".show").hasClass("first-screen")) {
+        $(".prev").css({ display: "none" });
+      }
+
+      $("#progressbar li")
+        .eq($(".card2").index(current_fs))
+        .removeClass("active");
+
+      current_fs.animate(
+        {},
+        {
+          step: function () {
+            current_fs.css({
+              display: "none",
+              position: "relative",
+            });
+
+            previous_fs.css({
+              display: "block",
+            });
+          },
+        }
+      );
+    });
+  });
+
+
+  // applicant details function
+  function showText(event){
+
+    var contentText = event.innerText;
+    var viewTextModal = $('#viewTextModal');
+    var textModal = `<div class="modal" id="fullTextView" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" onclick="modalremove()">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+            ${contentText}
+        </div>
+
+      </div>
+    </div>
+  </div>`;
+
+  $(viewTextModal).append(textModal);
+
+  $('#fullTextView').modal('show');
+
+
+  }
+  function modalremove(){
+    $("#fullTextView").remove();
+    $(".modal-backdrop").remove();
+  }
+</script>
+
+</html>
