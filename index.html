@@ -17,15 +17,15 @@
 <body>
   <div class="container main_container">
     <div class="row d-flex justify-content-center pt-4 pb-4" style="background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,62,240,1) 35%, rgba(0,212,255,1) 100%); height:700px">
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,62,240,1) 35%, rgba(0,212,255,1) 100%); height:700px; border-radius: 5px;">
       <div class="col-md-12 col-md-11 col-lg-10 col-xl-9">
         <div class="row top justify-content-center align-items-center px-3 pt-2"
-          style="background-color: #ff8100; border-radius: 5px;">
+          style="border-radius: 5px;">
           <p class="prev fa fa-long-arrow-left" id="back" style="color: #fff;">Back</p>
           <h3 style="color: #fff;">Submit a ticket</h3>
         </div>
-
-
+        <!---------form start here ------------>
+        <form action="">        
         <!------------ card body start here ------------>
         <div class="card_body d-flex flex-md-row px-2 mt-4 flex-column-reverse">
 
@@ -55,9 +55,10 @@
             <div class="card2 first-screen show ml-2">
               <div class="row">
                 <!-----------licensing authority or institution cards body start here-------------->
-                <div id="collapseLicensingBody">
+                <div id="licensing_auth_body">
                   <div class="card  licensing_cards d-flex flex-row flex-wrap justify-content-center">
-                    <span><img src="./images/schs.png" alt="img" width="120px" height="70px" /><br />(SCHS)</span>
+                    <!-- <h5>please select licensing authority</h5> -->
+                    <span><img src="./images/schs.png" alt="img" width="120px" height="70px" /><br />Saudi Commission<br> For Health Specialities</span>
                     <span><img src="./images/dha.png" alt="img" width="120px" height="70px" /><br />(DHA)</span>
 
                     <span><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />(DOHAD)</span>
@@ -115,14 +116,20 @@
                 <div class="col-md-12">
                 <div class="form-group mb-3 type_of_req_cards">
                     <div class="card">
-                      <span><p class="texttab1" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
-                      <span><p class="texttab2" onclick="showText(this)">Unable to find my report on dataflow portal</p></span>
+                      <span><p class="texttab1" onclick="showText(this)">Avail Paid Service Centre Support (Application Submission)</p></span>
+                      <span><p class="texttab2" onclick="showText(this)">How to apply?</p></span>
                       <span><p class="texttab3" onclick="showText(this)">I want to get an additional document verified</p></span>
-                      <span><p class="texttab4" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
-                      <span><p class="texttab5" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
-                      <span><p class="texttab6" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
-                      <span><p class="texttab7" onclick="showText(this)">Avail Paid Service Centre Support</p></span>
-                      <span class="mb-2"><p>Avail Paid Service Centre Support</p></span>
+                      <span><p class="texttab4" onclick="showText(this)">Verification Fee related query</p></span>
+                      <span><p class="texttab5" onclick="showText(this)">My case is past due date - when will I get the verification report?</p></span>
+                      <span><p class="texttab6" onclick="showText(this)">Need instructions to download DataFlow Report</p></span>
+                      <span><p class="texttab7" onclick="showText(this)">Unable to find my report on www.dataflowstatus.com portal</p></span>
+                      <span><p class="texttab3" onclick="showText(this)">Report Error Correction</p></span>
+                      <span><p class="texttab4" onclick="showText(this)">Apply for Appeal or Re-verification</p></span>
+                      <span><p class="texttab5" onclick="showText(this)">Report Transfer / Re-issuance of existing report to same / different regulator</p></span>
+                      <span><p class="texttab6" onclick="showText(this)">Request to register as an Agency / PRO</p></span>
+                      <span><p class="texttab7" onclick="showText(this)">Refund request</p></span>
+                      <span><p class="texttab7" onclick="showText(this)">Unable to make payment</p></span>
+                      
                     </div>
                 </div>
               </div>
@@ -136,16 +143,14 @@
 
             <!--------- personal details of applicant  start here--------->
             <div class="card2 personal_det">
-              <div class="row personal_det_body px-3 mt-2 mb-4 text-center">
+              <div class="row personal_det_body px-3 mt-2 mb-4">
                 <h3>Applicant details</h3>
-                <input type="email" class="mb-2 w-100 mt-0" placeholder="Enter email">
-                          <input type="number" class="mb-2 w-100 mt-0" placeholder="Enter mobile number">
-
-                <input type="date" class="mb-2 w-100 mt-0" placeholder="Enter mobile number">
+                <input type="email" class="mb-2 w-100 mt-0" placeholder="Enter email" required>
+                <input type="number" class="mb-2 w-100 mt-0" placeholder="Enter mobile number" required>
+                <input type="date" class="mb-2 w-100 mt-0" placeholder="Enter mobile number" required>
                 <div class="next-button d-flex justify-content-center align-items-center">
                   <span class="fa fa-arrow-right"></span>
                 </div>
-                
               </div>
             </div>
             <!--------- personal details of applicant end here--------->
@@ -189,6 +194,9 @@
 
       </div>
     </div>
+  </form>
+
+
   </div>
 
   <div id="viewTextModal">

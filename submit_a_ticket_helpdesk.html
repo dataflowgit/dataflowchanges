@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container container-flex">
+    <section class=" main content rounded-6 fc-new-ticket">
+       <h3 class="heading">{% translate ticket.submit_ticket_title %}</h3>
+        {% snippet new_ticket_form %}   
+    </section>
+    
+    <!-- <section class="sidebar content-light rounded-6 hide ticket-search" id="new-ticket-search"> 
+    <br /> 
+    </section> -->
+  </div>
+  
+  <script>
+     //Hide fields
+    function hideFields(fields_to_be_hidden) {
+      fields_to_be_hidden.map(function(field_id) {
+        var field_required = jQuery('#' + field_id);
+        if (jQuery(field_required).hasClass('required')) {
+          jQuery(field_required).attr('aria-required', 'true').removeClass('required');
+        }
+        if (jQuery(field_required).attr('type') == 'checkbox') {
+          jQuery(field_required).prop('checked', false);
+          jQuery(field_required).parents('.control-group').hide();
+        } else if (jQuery(field_required).hasClass('innerTitle')) {
+          jQuery(field_required).parents('.control-group').hide();
+        } else {
+          jQuery(field_required).val('').parents('.control-group').hide();
+        }
+        if (jQuery(field_required).hasClass('select2')) {
+          jQuery(field_required).prev('.select2-container').find('.select2-chosen').text('...');
+        }
+        var level2FieldHide = jQuery('#' + field_id).parents('.control-group').find('.level_2');
+        var level3FieldHide = jQuery('#' + field_id).parents('.control-group').find('.level_3');
+        if (level2FieldHide.length != 0) {
+          jQuery(level2FieldHide).find('select').removeClass('required');
+        }
+        if (level3FieldHide.length != 0) {
+          jQuery(level3FieldHide).find('select').removeClass('required');
+        }
+      });
+    }
+     function getParameterByUrl(name) {
+          name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+          var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+              results = regex.exec(location.search);
+          return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+      }
+  
+      function hideSelectOption(hideOption) {
+          jQuery.each(hideOption, function(key, value) {
+              var field = jQuery('#' + key);
+              for (var i =0; i<=value.length; i++) {
+                  jQuery(field).find('option[value="' + value[i] + '"]').remove();
+              }
+          });
+      }
+    
+    let paramsString = window.location.search;
+    let searchParams = new URLSearchParams(paramsString);
+   
+    var email_value = searchParams.get("email");
+    var case_number_value = searchParams.get("case_number");
+      var type_field_value = searchParams.get("type_field");
+    
+    jQuery('#helpdesk_ticket_custom_field_cf_dataflow_case_numbner_425507').val(case_number_value);
+    jQuery('#helpdesk_ticket_email').val(case_number_value);
+    
+    if(type_field_value == "pro"){
+      jQuery('#helpdesk_ticket_custom_field_cf_customer_type_425507').val('I am from a PRO/Agency');
+      jQuery('#helpdesk_ticket_custom_field_cf_dataflow_case_numbner_425507').addClass('required').parents('.control-group').find('label').addClass('required');
+    }
+    else if(type_field_value == "applicant"){
+      jQuery('#helpdesk_ticket_custom_field_cf_customer_type_425507').val('I am an individual APPLICANT');
+          jQuery('#helpdesk_ticket_custom_field_cf_dataflow_case_numbner_425507').parents('.control-group').find('label,input').removeClass('required');
+    }
+    else{
+    }
+    jQuery('#helpdesk_ticket_custom_field_cf_customer_type_425507').change(function(){
+      var type_val = jQuery(this).val();
+      if(type_val == "I am from a PRO/Agency"){
+        jQuery('#helpdesk_ticket_custom_field_cf_dataflow_case_numbner_425507').addClass('required').parents('.control-group').show().find('label').addClass('required');
+      }
+      else{
+        jQuery('#helpdesk_ticket_custom_field_cf_dataflow_case_numbner_425507').removeClass('required').parents('.control-group').find('label').removeClass('required');
+      }
+    });
+    
+    if (getParameterByUrl('dynamic_form') == 'true') {
+      var fieldHide = ['helpdesk_ticket_custom_field_cf_licensing_authority_or_institution_425507','helpdesk_ticket_product_id'];
+  
+      var custFieldVal = {
+          helpdesk_ticket_custom_field_cf_customer_type_425507 : ['I am from WAYZ HR (Premium Support Agency)'],
+          helpdesk_ticket_ticket_type : ['Upgrade my case to Express for USD 135 additional','Get registered as an Agency / PRO'],
+          helpdesk_ticket_custom_field_cf_submitted_concern_category_425507 : ['Avail Service Center Support for new application','I would like to register as an Agency / PRO','I have a SALES INQUIRY','Submit a Fastrack Verification request under Express Service','Data Subject Rights']
+      }
+  
+      hideFields(fieldHide);
+      hideSelectOption(custFieldVal)
+    }
+    
+  </script>
+  
+</body>
+</html>
