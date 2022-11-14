@@ -11,200 +11,250 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <title>Submit ticket</title>
 </head>
 
 <body>
   <div class="container main_container">
-    <div class="row d-flex justify-content-center pt-4 pb-4" style="background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(103,62,240,1) 35%, rgba(0,212,255,1) 100%); height:600px; border-radius: 5px;">
+    <div class="row d-flex justify-content-center pt-4 pb-4">
       <div class="col-md-12 col-md-11 col-lg-10 col-xl-12">
-        <div class="row top justify-content-center align-items-center px-3 pt-2"
-          style="border-radius: 5px;">
-          <p class="prev fa fa-long-arrow-left" id="back" style="color: #fff;">Back</p>
-          <h3 style="color: #fff;">Submit a ticket</h3>
+        <div class="row top justify-content-center align-items-center px-3 pt-3" style="border-radius: 5px;">
+          <p class="back" id="back" style="color: #fff;"><b class="fa fa-long-arrow-left"></b> Back</p>
+          <p style="color: #fff;">Submit a ticket</p>
         </div>
+
+       <div class="searchbar">
+        <input type="search" placeholder="search here">
+       </div>
         <!---------form start here ------------>
-        <form action="">        
-        <!------------ card body start here ------------>
-        <div class="card_body d-flex flex-md-row flex-column-reverse">
+        <form>
+          <!------------ card body start here ------------>
+          <div class="card_body d-flex flex-md-row flex-column-reverse">
 
-          <!--------- card1 start here -------------->
-          <div class="col-md-4 col-sm-12 card1_main  px-2">
-            <div class="card1">
-              <ul id="progressbar" class="text-center">
-                <li class="active step0"></li>
-                <li class="step0"></li>
-                <li class="step0"></li>
-                <li class="step0"></li>
-                <li class="step0"></li>
-              </ul>
-              <h6 class="mb-5">Licensing Authority</h6>
-              <h6 class="mb-5">Type of request</h6>
-              <h6 class="mb-5">Personal details of applicant</details></h6>
-              <h6 class="mb-5">Subject & Description</h6>
-            </div>
-          </div>
-          <!---------- card1 end here -------------->
-
-
-
-          <!---------- card2 start here -------------->
-          <div class="col-md-8 card2_main">
-            <!-----------licensing authority or institution section-------------->
-            <div class="card2 first-screen show ml-2">
-              <div class="row">
-                <!-----------licensing authority or institution cards body start here-------------->
-                <div id="licensing_auth_body">
-                  <div class="card  licensing_cards d-flex flex-row flex-wrap justify-content-center">
-                    <!-- <h5>please select licensing authority</h5> -->
-                    <span><img src="./images/schs.png" alt="img" width="120px" height="70px" /><br />Saudi Commission<br> For Health Specialities</span>
-                    <span><img src="./images/dha.png" alt="img" width="120px" height="70px" /><br />(DHA)</span>
-
-                    <span><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />(DOHAD)</span>
-                    <span><img src="./images/dohpq.png" alt="img" width="120px" height="70px" /><br />(DOHPQ)</span>
-                    <span><img src="./images/mohuae.png" alt="img" width="120px" height="70px" /><br />(MOHUAE)</span>
-
-                    <span><img src="./images/nhra.jpg" alt="img" width="120px" height="70px" /><br />(NHRA)</span>
-                    <span><img src="./images/omsb.png" alt="img" width="120px" height="70px" /><br />(OMSB)</span>
-                    <span><img src="./images/tpio.png" alt="img" width="120px" /><br />(TPIO)</span>
-
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(CCAD)</span>
-                    <span><img src="./images/cdad.jpg" alt="img" width="120px" height="70px" /><br />(CDAD)</span>
-                    <span><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />DOHAD (MEAD)</span>
-
-                    <span><img src="./images/dcas.png" alt="img" width="120px" height="70px" /><br />(DCAS)</span>
-                    <span><img src="./images/dhca.png" alt="img" width="120px" height="70px" /><br />(DHCA)</span>
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />EuroSynapses</span>
-
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(GDCUK)</span>
-                    <span><img src="./images/gmcuk.png" alt="img" width="120px" height="70px" /><br />(GMCUK)</span>
-                    <span><img src="./images/dhaman.png" alt="img" width="120px" height="70px" /><br />(DHAMAN)</span>
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(INZ)</span>
-
-                    <span><img src="./images/kse.png" alt="img" width="120px" height="70px" /><br />(KSE)</span>
-                    <span><img src="./images/mohuae.png" alt="img" width="120px" height="70px" /><br />(MOHUAEN)</span>
-                    <span><img src="./images/moms.png" alt="img" width="120px" height="70px" /><br />(MOMS)</span>
-
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEK)</span>
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEO)</span>
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />NCNZ</span>
-
-                    <span><img src="./images/ose.png" alt="img" width="120px" height="70px" /><br />(OSE)</span>
-                    <span><img src="./images/crpep.png" alt="img" width="120px" height="70px" /><br />(CRPEP)</span>
-                    <span><img src="./images/docdad.jpg" alt="img" width="120px" height="70px" /><br />(DOCDAD)</span>
-                    <span><img src="./images/ssd.jpg" alt="img" width="120px" height="70px" /><br />(SSD)</span>
-                    <span><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MSBN)</span>
-                    <span><img src="./images/aequo.png" alt="img" width="120px" height="70px" /><br />(AEQUO)</span>
-                  </div>
-                </div>
-                <!-----------licensing authority or institution cards body ends here-------------->
-
-
-
-                <div class="next-button d-flex justify-content-center align-items-center p-0">
-                  <span class="fa fa-arrow-right"></span>
-                </div>
+            <!--------- card1 start here -------------->
+            <div class="col-md-4 col-sm-12 card1_main  px-2">
+              <div class="card1">
+                <ul class="progressbar" class="text-center">
+                  <li class="active step0"></li>
+                  <li class="step0"></li>
+                  <li class="step0"></li>
+                  <li class="step0"></li>
+                  <li class="step0"></li>
+                </ul>
+                <h6 class="mb-5">Licensing Authority</h6>
+                <h6 class="mb-5">Type of request</h6>
+                <h6 class="mb-5">Personal details of applicant</details>
+                </h6>
+                <h6 class="mb-5">Subject & Description</h6>
               </div>
             </div>
-            <!-----------licensing authority or institution section ends here-------------->
-
-
-            <!------------ type of request start here ------------------->
-            <div class="card2">
-              <div class="row">
-                <div class="col-md-12">
-                <div class="form-group mb-3 type_of_req_cards">
-                    <div class="card">
-                      <span><p class="texttab1" onclick="showText(this)">Avail Paid Service Centre Support (Application Submission)</p></span>
-                      <span><p class="texttab2" onclick="showText(this)">How to apply?</p></span>
-                      <span><p class="texttab3" onclick="showText(this)">I want to get an additional document verified</p></span>
-                      <span><p class="texttab4" onclick="showText(this)">Verification Fee related query</p></span>
-                      <span><p class="texttab5" onclick="showText(this)">My case is past due date - when will I get the verification report?</p></span>
-                      <span><p class="texttab6" onclick="showText(this)">Need instructions to download DataFlow Report</p></span>
-                      <span><p class="texttab7" onclick="showText(this)">Unable to find my report on www.dataflowstatus.com portal</p></span>
-                      <span><p class="texttab3" onclick="showText(this)">Report Error Correction</p></span>
-                      <span><p class="texttab4" onclick="showText(this)">Apply for Appeal or Re-verification</p></span>
-                      <span><p class="texttab5" onclick="showText(this)">Report Transfer / Re-issuance of existing report to same / different regulator</p></span>
-                      <span><p class="texttab6" onclick="showText(this)">Request to register as an Agency / PRO</p></span>
-                      <span><p class="texttab7" onclick="showText(this)">Refund request</p></span>
-                      <span><p class="texttab7" onclick="showText(this)">Unable to make payment</p></span>
-                      
-                    </div>
-                </div>
-              </div>
-                <div class="next-button d-flex justify-content-center align-items-center p-0">
-                  <span class="fa fa-arrow-right"></span>
-                </div>
-              </div>
-            </div>
-            <!------------ type of request ends here ------------------->
-
-
-            <!--------- personal details of applicant  start here--------->
-            <div class="card2 personal_det">
-              <div class="row personal_det_body px-3 mt-2 mb-4">
-                <h3>Applicant details</h3>
-                <input type="email" class="mb-2 w-100 mt-0" placeholder="Enter email" required>
-                <input type="number" class="mb-2 w-100 mt-0" placeholder="Enter mobile number" required>
-                <input type="date" class="mb-2 w-100 mt-0" placeholder="Enter mobile number" required>
-                <div class="next-button d-flex justify-content-center align-items-center">
-                  <span class="fa fa-arrow-right"></span>
-                </div>
-              </div>
-            </div>
-            <!--------- personal details of applicant end here--------->
+            <!---------- card1 end here -------------->
 
 
 
-            <!--------- subject & description start here --------->
-            <div class="card2 sub_and_desc">
-              <div class="row">
-                    <div class="card col-12 sub_and_desc_body p-0" style="background-color: transparent; border:none;" >
-                      <input type="text" class="mb-2 w-100 mt-0" placeholder="enter subject here"><br>
-                      <textarea name="description" id="description" cols="42" rows="10" placeholder="enter description here" style="background-color: transparent;"></textarea>
-                    </div>                
-                <div class="next-button d-flex justify-content-center align-items-center p-0">
-                  <span class="fa fa-arrow-right"></span>
-                </div>
-              </div>
-            </div>
-            <!--------- subject & description end here --------->
+            <!---------- card2 start here -------------->
+            <div class="col-md-8 card2_main">
+              <!-----------licensing authority or institution section-------------->
+              <div class="card2 first-screen show ml-2">
+                <div class="row">
+                  <!-----------licensing authority or institution cards body start here-------------->
+                  <div id="licensing_auth_body">
+                    <div class="card  licensing_cards d-flex flex-row flex-wrap justify-content-center">
+                      <span class="slect_card" onclick="myFunction()"><img src="./images/schs.png" alt="img" width="120px" height="70px" /><br />Saudi
+                        Commission<br> For Health Specialities</span>
+                      <span class="slect_card" id="Doh"><img src="./images/dha.png" alt="img" width="120px" height="70px" /><br />(DHA)</span>
 
+                      <span class="slect_card"><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />(DOHAD)</span>
+                      <span class="slect_card"><img src="./images/dohpq.png" alt="img" width="120px" height="70px" /><br />(DOHPQ)</span>
+                      <span class="slect_card"><img src="./images/mohuae.png" alt="img" width="120px" height="70px" /><br />(MOHUAE)</span>
 
+                      <span class="slect_card"><img src="./images/nhra.jpg" alt="img" width="120px" height="70px" /><br />(NHRA)</span>
+                      <span class="slect_card"><img src="./images/omsb.png" alt="img" width="120px" height="70px" /><br />(OMSB)</span>
+                      <span class="slect_card"><img src="./images/tpio.png" alt="img" width="120px" /><br />(TPIO)</span>
 
-            
-<!----------- success messege start here ---------------->
-            <div class="card2">
-              <div class="row">
-                <div class="form-group mb-3 w-100">
-                  <div  id="type_of_req">
-                    <div class="card  p-0" style="border: none">
-                     <img src="https://uploads-ssl.webflow.com/5ef0df6b9272f7410180a013/60c0e28575cd7c21701806fd_q1cunpuhbdreMPFRSFLyfUXNzpqv_I5fz_plwv6gV3sMNXwUSPrq88pC2iJijEV7wERnKXtdTA0eE4HvdnntGo9AHAWn-IcMPKV-rZw1v75vlTEoLF4OdNqsRb7C6r7Mvzrm7fe4.png" alt="">
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(CCAD)</span>
+                      <span class="slect_card"><img src="./images/cdad.jpg" alt="img" width="120px" height="70px" /><br />(CDAD)</span>
+                      <span class="slect_card"><img src="./images/dohad.png" alt="img" width="120px" height="70px" /><br />DOHAD
+                        (MEAD)</span>
+
+                      <span class="slect_card"><img src="./images/dcas.png" alt="img" width="120px" height="70px" /><br />(DCAS)</span>
+                      <span class="slect_card"><img src="./images/dhca.png" alt="img" width="120px" height="70px" /><br />(DHCA)</span>
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px"
+                          height="70px" /><br />EuroSynapses</span>
+
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(GDCUK)</span>
+                      <span class="slect_card"><img src="./images/gmcuk.png" alt="img" width="120px" height="70px" /><br />(GMCUK)</span>
+                      <span class="slect_card"><img src="./images/dhaman.png" alt="img" width="120px" height="70px" /><br />(DHAMAN)</span>
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(INZ)</span>
+
+                      <span class="slect_card"><img src="./images/kse.png" alt="img" width="120px" height="70px" /><br />(KSE)</span>
+                      <span class="slect_card"><img src="./images/mohuae.png" alt="img" width="120px"
+                          height="70px" /><br />(MOHUAEN)</span>
+                      <span class="slect_card"><img src="./images/moms.png" alt="img" width="120px" height="70px" /><br />(MOMS)</span>
+
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEK)</span>
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MHEO)</span>
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />NCNZ</span>
+
+                      <span class="slect_card"><img src="./images/ose.png" alt="img" width="120px" height="70px" /><br />(OSE)</span>
+                      <span class="slect_card"><img src="./images/crpep.png" alt="img" width="120px" height="70px" /><br />(CRPEP)</span>
+                      <span class="slect_card"><img src="./images/docdad.jpg" alt="img" width="120px" height="70px" /><br />(DOCDAD)</span>
+                      <span class="slect_card"><img src="./images/ssd.jpg" alt="img" width="120px" height="70px" /><br />(SSD)</span>
+                      <span class="slect_card"><img src="./images/moe.jpg" alt="img" width="120px" height="70px" /><br />(MSBN)</span>
+                      <span class="slect_card"><img src="./images/aequo.png" alt="img" width="120px" height="70px" /><br />(AEQUO)</span>
                     </div>
                   </div>
+                  <!-----------licensing authority or institution cards body ends here-------------->
+
+
+
+                  <!-- <div class="next-button d-flex justify-content-center align-items-center p-0">
+                    <span class="fa fa-arrow-right"></span>
+                  </div> -->
+
                 </div>
               </div>
+              <!-----------licensing authority or institution section ends here-------------->
+
+
+              <!------------ type of request start here ------------------->
+              <div class="card2">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="mb-3 type_of_req_cards">
+                      <div class="card">
+                        <span class="select_type_of_req">
+                          <p class="texttab1 text-center" onclick="showText(this)">Avail Paid Service Centre Support
+                            (Application Submission)</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab2 text-center" onclick="showText(this)">How to apply?</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab3 text-center" onclick="showText(this)">I want to get an additional document
+                            verified</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab4 text-center" onclick="showText(this)">Verification Fee related query</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab5 text-center" onclick="showText(this)">My case is past due date - when will
+                            I get the verification report?</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab6 text-center" onclick="showText(this)">Need instructions to download
+                            DataFlow Report</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab7 text-center" onclick="showText(this)">Unable to find my report on
+                            www.dataflowstatus.com portal</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab3 text-center" onclick="showText(this)">Report Error Correction</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab4 text-center" onclick="showText(this)">Apply for Appeal or Re-verification
+                          </p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab5 text-center" onclick="showText(this)">Report Transfer / Re-issuance of
+                            existing report to same / different regulator</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab6 text-center" onclick="showText(this)">Request to register as an Agency /
+                            PRO</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab7 text-center" onclick="showText(this)">Refund request</p>
+                        </span>
+                        <span class="select_type_of_req">
+                          <p class="texttab7 text-center" onclick="showText(this)">Unable to make payment</p>
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="next-button d-flex justify-content-center align-items-center p-0">
+                    <span class="fa fa-arrow-right"></span>
+                  </div> -->
+
+                </div>
+              </div>
+              <!------------ type of request ends here ------------------->
+
+
+              <!--------- personal details of applicant  start here--------->
+              <div class="card2 personal_det">
+                <div class="row personal_det_body px-3 mt-2 mb-4">
+                  <h3>Applicant details</h3>
+                  <input type="email" class="mb-2 w-100 mt-0" placeholder="Enter Email" required>
+                  <input type="number" class="mb-2 w-100 mt-0" placeholder="Enter Mobile number" required>                
+                  <input type="text" name="birthday" placeholder="Enter date of birth"/>
+                  <div class="next-button d-flex justify-content-center align-items-center">Next
+                    <span class="fa fa-arrow-right"></span>
+                  </div>
+                </div>
+              </div>
+              <!--------- personal details of applicant end here--------->
+
+
+
+              <!--------- subject & description start here --------->
+              <div class="card2 sub_and_desc">
+                <div class="row">
+                  <div class="card col-12 sub_and_desc_body p-0" style="border:none;">
+                    <h3>Subject & description</h3>
+                    <input type="text" class="mb-2 w-100 mt-0" placeholder="Enter subject here"><br>
+                    <input type="text" class="mb-2 w-100 mt-0" placeholder="Enter Case Number" required><br><br>
+                    <textarea name="description" id="description"
+                      placeholder="Enter description here" style="background-color: transparent;"></textarea>
+                      <input type="file" class="attatch_doc">
+                  </div>
+                  <div class="next-button d-flex justify-content-center align-items-center p-0">Next
+                    <span class="fa fa-arrow-right"></span>
+                  </div>
+                </div>
+              </div>
+              <!--------- subject & description end here --------->
+
+
+
+
+              <!----------- success messege start here ---------------->
+              <div class="card2">
+                <div class="row">
+                  <div class="form-group mb-3 w-100">
+                    <div id="type_of_req">
+                      <div class="card  p-0" style="border: none">
+                        <img
+                          src="https://uploads-ssl.webflow.com/5ef0df6b9272f7410180a013/60c0e28575cd7c21701806fd_q1cunpuhbdreMPFRSFLyfUXNzpqv_I5fz_plwv6gV3sMNXwUSPrq88pC2iJijEV7wERnKXtdTA0eE4HvdnntGo9AHAWn-IcMPKV-rZw1v75vlTEoLF4OdNqsRb7C6r7Mvzrm7fe4.png"
+                          alt="img" width="300px">
+                          <!-- <select name="actions" id="actions" onchange="popOrNot(this,0)">
+                            <option value="_parent:./external_link.html">External Link</option>
+                            <option value="_blank:./popup_window.html">Popup Window</option>
+                            </select> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--------- success messege end here --------->
             </div>
-            <!--------- success messege end here --------->
+            <!---------------- card2 end here -------------------->
           </div>
-          <!---------------- card2 end here -------------------->
-        </div>
-        <!---------------- card body end here ---------------->
+          <!---------------- card body end here ---------------->
 
       </div>
     </div>
-  </form>
-
-
+    </form>
   </div>
-
   <div id="viewTextModal">
-
   </div>
 </body>
-
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -214,9 +264,10 @@
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
 
-
-
-
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
 
 <!----------- jquery start here ----------->
 <script>
@@ -225,7 +276,7 @@
 
     // No BACK button on first screen
     if ($(".show").hasClass("first-screen")) {
-      $(".prev").css({ display: "none" });
+      $(".back").css({ display: "none" });
     }
 
 
@@ -234,99 +285,70 @@
     $(".next-button").click(function () {
       current_fs = $(this).parent().parent();
       next_fs = $(this).parent().parent().next();
-      $(".prev").css({ display: "block" });
+      $(".back").css({ display: "block" });
       $(current_fs).removeClass("show");
       $(next_fs).addClass("show");
+      $(".progressbar li").eq($(".card2").index(next_fs)).addClass("active");
 
-      $("#progressbar li").eq($(".card2").index(next_fs)).addClass("active");
-
-      current_fs.animate(
-        {},
-        {
-          step: function () {
-            current_fs.css({
-              display: "none",
-              position: "relative",
-            });
-
-            next_fs.css({
-              display: "block",
-            });
-          },
-        }
-      );
     });
 
     // Previous button
-    $(".prev").click(function () {
+    $(".back").click(function () {
       current_fs = $(".show");
       previous_fs = $(".show").prev();
 
       $(current_fs).removeClass("show");
       $(previous_fs).addClass("show");
-
-      $(".prev").css({ display: "block" });
+      $(".back").css({ display: "block" });
 
       if ($(".show").hasClass("first-screen")) {
-        $(".prev").css({ display: "none" });
+        $(".back").css({ display: "none" });
       }
-
-      $("#progressbar li")
-        .eq($(".card2").index(current_fs))
-        .removeClass("active");
-
-      current_fs.animate(
-        {},
-        {
-          step: function () {
-            current_fs.css({
-              display: "none",
-              position: "relative",
-            });
-
-            previous_fs.css({
-              display: "block",
-            });
-          },
-        }
-      );
+      $(".progressbar li").eq($(".card2").index(current_fs)).removeClass("active").prev();
     });
   });
 
 
-  // applicant details function
-  function showText(event){
 
-    var contentText = event.innerText;
-    var viewTextModal = $('#viewTextModal');
-    var textModal = `<div class="modal" id="fullTextView" data-backdrop="static" data-keyboard="false">
-    <div class="modal-dialog">
-      <div class="modal-content">
-      
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" onclick="modalremove()">&times;</button>
-        </div>
-        
-        <!-- Modal body -->
-        <div class="modal-body">
-            ${contentText}
-        </div>
-
-      </div>
-    </div>
-  </div>`;
-
-  $(viewTextModal).append(textModal);
-
-  $('#fullTextView').modal('show');
+//date picker
+$(function() {
+  $('input[name="birthday"]').daterangepicker({
+    singleDatePicker: true,
+    showDropdowns: true,
+    minYear: 1901,
+    maxYear: parseInt(moment().format('YYYY'),10),
+    maxDate:true,
+  }, function(start, end, label) {
+    var years = moment().diff(start, 'years');
+  });
+});
 
 
-  }
-  function modalremove(){
-    $("#fullTextView").remove();
-    $(".modal-backdrop").remove();
-  }
+//select licensing cards and next
+$(".slect_card").click(function () {
+      current_fs = $(this).parent().parent().parent().parent();
+      next_fs = $(this).parent().parent().parent().parent().next();
+      $(".back").css({ display: "block" });
+      $(current_fs).removeClass("show");
+      $(next_fs).addClass("show")
+      $(".back").css({ display: "block" });
+      $(".progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+  
+  });  
+
+
+//select type of request and next
+$(".select_type_of_req").click(function () {
+      current_fs = $(this).parent().parent().parent().parent().parent();
+      next_fs = $(this).parent().parent().parent().parent().parent().next();
+      $(current_fs).css({ display : "none" })
+      $(next_fs).addClass("show");
+      $(".back").css({ display: "block" });
+      $(".searchbar").css({ display : "none"});
+      $(".progressbar li").eq($(".card2").index(next_fs)).addClass("active");
+     
+  });  
+
 </script>
 
 </html>
